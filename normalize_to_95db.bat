@@ -7,11 +7,18 @@ set batchpath=%~dp0%
 set fullpath=%1
 set filename="%~nx1%"
 set folder=%~dp1%
+set fileExtension=%~x1
 
 echo fullpath = %fullpath%
 echo filename = %filename%
 echo folder = %folder%
 echo batchpath = %batchpath%
+echo fileExtension = "%fileExtension%"
+
+if not "%fileExtension%" == ".mp3" (
+   echo "%fileExtension% not an .mp3 file, skipping"
+	goto skip
+)
 
 rename %filename% "temporary_filename_500.mp3"
 REM -c : ignore clipping
@@ -21,7 +28,8 @@ call "%batchpath%mp3gain" -c -r -d 6.0 "%folder%temporary_filename_500.mp3"
 
 rename "%folder%temporary_filename_500.mp3" %filename%
 
+:skip
 shift
 if not "%~1"=="" goto loop
 
-REM pause
+pause
