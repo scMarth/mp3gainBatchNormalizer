@@ -1,4 +1,4 @@
-This is a simple batch script that uses MP3Gain to normalize mp3 files to a fixed target volume of 95 dB. The purpose of this batch script is to easily normalize mp3 files, especially those with Japanese, Chinese, and Korean characters in the filenames, which MP3Gain GUI currently does not support.
+These are simple batch script that use MP3Gain to normalize mp3 files to a fixed target volume of 95 dB. The purpose of these batch scripts is to easily normalize mp3 files, especially those with Japanese, Chinese, and Korean characters in the filenames, which MP3Gain GUI currently does not support.
 
 About MP3Gain: MP3Gain is an audio normalization software tool that uses statistical analysis to determine how loud an mp3 file sounds to the human ear, and adjusts the perceived loudness of the mp3 file.
 
@@ -6,6 +6,15 @@ For more info, see: http://mp3gain.sourceforge.net/
 
 Usage:
 
-1.) Copy "normalize_to_95db.bat" and "mp3gain.exe" into the desired folder
+Drag and dropping files (normalize_to_95db.bat)
 
-2.) Drag and drop the mp3 files that you want to adjust onto "normalize_to_95db.bat"
+1.) Drag and drop the mp3 files that you want to adjust onto "normalize_to_95db.bat"
+
+Drag and dropping folders (normalize_DIR_to_95db.bat)
+
+1.) Drag and drop a folder onto "normalize_DIR_to_95db.bat"
+
+Note:
+-non-mp3 files will simply be skipped
+-normalize_DIR_to_95db.bat will also process .mp3 files in subdirectories
+
