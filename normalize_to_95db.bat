@@ -32,4 +32,4 @@ rename "%folder%temporary_filename_500.mp3" %filename%
 shift
 if not "%~1"=="" goto loop
 
-pause
+rem pause
