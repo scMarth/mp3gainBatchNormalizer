@@ -18,11 +18,11 @@ goto end
 
 
 :processFile
-	echo fullpath = %fullpath%
-	echo filename = %filename%
-	echo folder = %folder%
-	echo batchpath = %batchpath%
-	
+	echo "fullpath = %fullpath%"
+	echo "filename = %filename%"
+	echo "folder = %folder%"
+	echo "batchpath = %batchpath%"
+
 	rename "%folder%%filename%" "%temporary_filename_500.mp3"
 	REM -c : ignore clipping
 	REM -r : apply track gain
@@ -30,10 +30,13 @@ goto end
 	call "%batchpath%mp3gain" -c -r -d 6.0 "%folder%temporary_filename_500.mp3"
 
 	rename "%folder%temporary_filename_500.mp3" "%filename%"
-	
+
 	set /a count+=1
+   echo.
 	goto :eof
 
 :end
+
 echo "%count% files processed."
-rem pause
+
+REM pause
