@@ -18,7 +18,11 @@ Drag and dropping folders (**normalize_DIR_to_95db.bat**)
 
 1.) Drag and drop a folder onto "**normalize_DIR_to_95db.bat**"
 
-Note:
+# Notes:
 * non-mp3 files will simply be skipped
 * **normalize_DIR_to_95db.bat** will also process .mp3 files in subdirectories
 * due to limits in how long command arguments can be in Windows, the limit for amount of files that can be drag and dropped onto **normalize_to_95db.bat** is around 80, depending on how long filenames are. If you want to batch many files, put mp3 files in a folder and use **normalize_DIR_to_95db.bat**
+
+### Want to normalize mp3 files in your Android device?
+
+https://github.com/scMarth/mp3gainBatchNormalizer/blob/master/ANDROID.md
