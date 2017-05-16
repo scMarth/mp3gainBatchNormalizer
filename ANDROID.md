@@ -4,7 +4,7 @@ I was able to use this script to normalize mp3 files in my Android device, but I
 
 ### Tests:
 
-Before you attempt to normalize your music files, I recommend you to do the following tests:
+Before you attempt to normalize your music files, I recommend you to do the following test:
 
 Step 1.) Go to your *Most Played* and find a song that you will use as a test (preferrably one you don't really care about if it gets messed up)
 
