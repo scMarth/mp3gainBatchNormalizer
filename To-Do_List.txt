@@ -1,0 +1,2 @@
+Line 26 in 'normalize_DIR_to_95db.bat': does the % need to be there in
+    "%temporary_filename_500.mp3"?
