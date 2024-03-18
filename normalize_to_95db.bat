@@ -36,4 +36,4 @@ echo.
 shift
 if not "%~1"=="" goto loop
 
-REM pause
+pause
